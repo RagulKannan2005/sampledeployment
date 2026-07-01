@@ -8,7 +8,7 @@ pipeline{
         stage('Checkout'){
             steps{
                 git branch: 'main', 
-                url: 'https://gitlab.com/RagulKannan2005/springproject.git'
+                url: 'https://github.com/RagulKannan2005/sampledeployment.git'
             }
         }
         stage('Build'){
