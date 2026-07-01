@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
-
+import {CommonModule} from "@angular/common";
+import { Navbar } from "../navbar/navbar";
 @Component({
   selector: 'app-stawberry',
-  imports: [RouterLink],
+  imports: [RouterLink, CommonModule, Navbar],
   templateUrl: './stawberry.html',
   styleUrl: './stawberry.css',
 })

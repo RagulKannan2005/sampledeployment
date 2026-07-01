@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-vennila',
-  imports: [RouterLink],
+  imports: [RouterLink, CommonModule],
   templateUrl: './vennila.html',
   styleUrl: './vennila.css',
 })

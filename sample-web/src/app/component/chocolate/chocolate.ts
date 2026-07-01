@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterLink } from "@angular/router";
+import { RouterLink } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-chocolate',
-  imports: [RouterLink],
+  standalone: true,
+  imports: [RouterLink, CommonModule],
   templateUrl: './chocolate.html',
   styleUrl: './chocolate.css',
 })
 export class Chocolate {
-  data=[
+  data = [
     {
       name:'Vennila Ice Cream',
       image:'assets/IceCream-Cones.webp',

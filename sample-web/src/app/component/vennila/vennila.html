@@ -3,51 +3,19 @@
 <div class="main-container">
 
     <div class="card">
-        <div class="card-container">
+        <div class="card-container" *ngFor="let item of data">
             <div class="icecream-image">
-                <img [src]="data[0].image" alt="" srcset="">
+                <img [src]="item.image" alt="" srcset="">
             </div>
             <div class="icecream-name">
-                <h4>{{ data[0].name }}</h4>
+                <h4>{{ item.name }}</h4>
             </div>
             <div class="icecream-des">
-                <p>{{data[0].description}}</p>
+                <p>{{item.description}}</p>
             </div>
             <div class="price">
-                {{data[0].price}}
+                {{item.price}}
             </div>
         </div>
     </div>
-    <div class="card">
-        <div class="card-container">
-            <div class="icecream-image">
-                <img [src]="data[0].image" alt="" srcset="">
-            </div>
-            <div class="icecream-name">
-                <h4>{{ data[1].name }}</h4>
-            </div>
-            <div class="icecream-des">
-                <p>{{data[1].description}}</p>
-            </div>
-            <div class="price">
-                {{data[1].price}}
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-container">
-            <div class="icecream-image">
-                <img [src]="data[0].image" alt="" srcset="">
-            </div>
-            <div class="icecream-name">
-                <h4>{{ data[2].name }}</h4>
-            </div>
-            <div class="icecream-des">
-                <p>{{data[2].description}}</p>
-            </div>
-            <div class="price">
-                {{data[2].price}}
-            </div>
-        </div>
-    </div>
-</div>
+    
