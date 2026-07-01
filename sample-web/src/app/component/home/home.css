@@ -1,97 +1,66 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;   
-    justify-content: space-between;
-    background-color:bisque;
-    padding: 10px;
-    width: 800px;
-    border-radius: 50px;
-    
-}
-.navbar-header{
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    cursor: pointer;
-}
-.navbar:hover{
-    background-color: rgb(232, 203, 165);
-    transition: 0.5s;
-    transform: scale(1.1);
-
-}
-.navbar ul li:hover{
-    background-color: rgb(232, 203, 165);
-    transition: 0.5s;
-    transform: scale(1.1);
-}
-
-.navbar ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    cursor: pointer;
-    /* justify-content: space-between; */
-}
-.navbar ul li{
-    padding: 10px;
-}
-
-.icecream-buttons{
-    display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    /* width: 800px; */
-    padding: 10px;
-    margin-top: 20px;
-    /* background-color: bisque; */
-}
-.main-buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-    width: 100%;
-    gap: 50px;
-}
-.main-buttons button{
-    padding: 10px;
-    /* border-radius: 10px; */
-    background-color: bisque;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-   
-}
-.image{
+.image {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
-}
-.image img{
-    /* height: ; */
-    /* position: absolute; */
-    width: 1518px;
+    padding: 20px;
     margin-top: 20px;
 }
-.main-buttons button:hover{
-    background-color: rgb(232, 203, 165);
-    transition: 0.5s;
-    border-radius: 10px;
-    transform: scale(1.1);
+
+.image img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.image img:hover {
+    transform: scale(1.02);
+}
+
+.icecream-buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.main-buttons button {
+    padding: 15px 40px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-buttons button:hover {
+    background: linear-gradient(135deg, var(--primary-hover), var(--secondary-hover));
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+    font-size: 24px;
 }

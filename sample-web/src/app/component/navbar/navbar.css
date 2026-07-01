@@ -1,60 +1,85 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding-top: 20px;
 }
-.navbar{
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
     display: flex;
     flex-direction: row;
     align-items: center;   
     justify-content: space-between;
-    background-color:bisque;
-    padding: 10px;
-    width: 800px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    padding: 15px 30px;
+    width: 90%;
+    max-width: 1000px;
     border-radius: 50px;
-    
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.3s ease;
 }
-.navbar-header{
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
+
+.navbar:hover {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+}
+
+.navbar-header {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-primary);
     cursor: pointer;
-}
-.navbar:hover{
-    background-color: rgb(232, 203, 165);
-    transition: 0.5s;
-    transform: scale(1.1);
-
-}
-.navbar ul li:hover{
-    background-color: rgb(232, 203, 165);
-    transition: 0.5s;
-    transform: scale(1.1);
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    cursor: pointer;
-    /* justify-content: space-between; */
+    gap: 20px;
 }
-.navbar ul li{
-    padding: 10px;
+
+.navbar ul li {
+    padding: 5px 10px;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
 }
-.navbar ul li a:hover{
-    color: rgb(177, 148, 111);
-    transition: 0.5s;
-    transform: scale(1.1);
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
 }

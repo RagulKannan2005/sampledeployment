@@ -2,8 +2,8 @@
 <h1>Vennila varities</h1>
 <div class="main-container">
 
-    <div class="card">
-        <div class="card-container" *ngFor="let item of data">
+    <div class="card" *ngFor="let item of data">
+        <div class="card-container">
             <div class="icecream-image">
                 <img [src]="item.image" alt="" srcset="">
             </div>

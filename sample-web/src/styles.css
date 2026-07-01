@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-color: #ff4d6d;
+  --primary-hover: #e63956;
+  --secondary-color: #667eea;
+  --secondary-hover: #764ba2;
+  --bg-gradient-start: #1e1e2f;
+  --bg-gradient-end: #2a2a40;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(20, 20, 30, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+
+button {
+  font-family: 'Outfit', sans-serif;
+}
