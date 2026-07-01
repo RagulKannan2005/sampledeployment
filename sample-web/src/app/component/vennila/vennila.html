@@ -1,0 +1,53 @@
+<button routerLink="/home">🏠</button>
+<h1>Vennila varities</h1>
+<div class="main-container">
+
+    <div class="card">
+        <div class="card-container">
+            <div class="icecream-image">
+                <img [src]="data[0].image" alt="" srcset="">
+            </div>
+            <div class="icecream-name">
+                <h4>{{ data[0].name }}</h4>
+            </div>
+            <div class="icecream-des">
+                <p>{{data[0].description}}</p>
+            </div>
+            <div class="price">
+                {{data[0].price}}
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-container">
+            <div class="icecream-image">
+                <img [src]="data[0].image" alt="" srcset="">
+            </div>
+            <div class="icecream-name">
+                <h4>{{ data[1].name }}</h4>
+            </div>
+            <div class="icecream-des">
+                <p>{{data[1].description}}</p>
+            </div>
+            <div class="price">
+                {{data[1].price}}
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-container">
+            <div class="icecream-image">
+                <img [src]="data[0].image" alt="" srcset="">
+            </div>
+            <div class="icecream-name">
+                <h4>{{ data[2].name }}</h4>
+            </div>
+            <div class="icecream-des">
+                <p>{{data[2].description}}</p>
+            </div>
+            <div class="price">
+                {{data[2].price}}
+            </div>
+        </div>
+    </div>
+</div>
